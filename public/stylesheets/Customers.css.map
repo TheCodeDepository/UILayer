@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAGY,KAHP,CACD,KAAK,CACD,EAAE,CACE,KAAK,CAAC;EACF,KAAK,EAAE,IAAI;CACd;;AAQb,AAAA,UAAU,CAAC;EACP,MAAM,EAAE,aAAa;EACrB,MAAM,EAAE,GAAG;EACX,YAAY,EAAE,KAAK;EACnB,YAAY,EAAE,OAAO;EACrB,aAAa,EAAE,GAAG;CAKrB;;AAVD,AAMI,UANM,CAMN,QAAQ,CAAA;EACJ,aAAa,EAAE,IAAI;EACnB,MAAM,EAAE,IAAI;CACf",
+    "sources": [
+        "Customers.scss"
+    ],
+    "names": [],
+    "file": "Customers.css"
+}

@@ -1,0 +1,68 @@
+﻿.contentDisplay
+  .cHeader
+    h1 Customers    
+  .cBody
+    block scripts
+      link(rel='stylesheet', href='/stylesheets/Customers.css')
+      #data-Grid          
+        .table-responsive
+          table.table
+            thead
+              tr
+                th Customer ID
+                th Company Name
+                th Contact Name
+                th Contact Title
+                th Address
+                th City
+                th Region
+                th Postal Code
+                th Country
+                th Phone
+                th Fax
+              tr(id="Filters")
+                th
+                  input.form-control(type="text" ng-model="customerID")
+                th
+                  input.form-control(type="text" ng-model="companyName")
+                th
+                  input.form-control(type="text" ng-model="contactName")
+                th
+                  input.form-control(type="text" ng-model="contactTitle")
+                th
+                  input.form-control(type="text" ng-model="address")
+                th
+                  input.form-control(type="text" ng-model="city")
+                th
+                  input.form-control(type="text" ng-model="region")
+                th
+                  input.form-control(type="text" ng-model="postalCode")
+                th
+                  input.form-control(type="text" ng-model="country")
+                th
+                  input.form-control(type="text" ng-model="phone")
+                th
+                  input.form-control(type="text" ng-model="fax")
+            tbody            
+              tr(ng-repeat='x in records | filter:{CustomerID: customerID,CompanyName: companyName,\
+              ContactName: contactName,\
+              ContactTitle: contactTitle,\
+              Address: address,\
+              City: city,\
+              Region:region,\
+              PostalCode:postalCode,\
+              Country: country,\
+              Phone: phone,\
+              Fax:fax }')             
+                td {{x.CustomerID}}
+                td {{x.CompanyName}}
+                td {{x.ContactName}}
+                td {{x.ContactTitle}}
+                td {{x.Address}}
+                td {{x.City}}
+                td {{x.Region}}
+                td {{x.PostalCode}}
+                td {{x.Country}}
+                td {{x.Phone}}
+                td {{x.Fax}}
+
