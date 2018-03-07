@@ -78,10 +78,11 @@ body
         left: 0px;
         right: 0px;
         bottom: 0px;
-        overflow-x: hidden;
-        overflow-y: scroll;
+        
+    
 
         .cHeader {
+            height: 5%;
             h1 {
                 text-decoration: underline;
                 margin-top: 0px;
@@ -90,6 +91,10 @@ body
         }
 
         .cBody {
+            bottom: 0px;
+            height: 95%;
+            width: 100%;                 
+            padding-top: 1%;
             td, tr {
                 height: auto;
                 width: auto;

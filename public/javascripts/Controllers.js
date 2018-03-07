@@ -8,20 +8,26 @@
         $scope.records = response.data;
     });
 
-    //$scope.getCustomersByID = function (controlID) {
-    //    if (controlID === "") {
-    //        $scope.records = $scope.dataPool;
-    //    }
-    //    var id = document.getElementById(controlID).value;      
-    //    var customers = [];
-    //    for (var i = 0; i < $scope.dataPool.length; i++) {
-    //        var record = $scope.dataPool[i];
-    //        if (record.CustomerID === id) {
-    //            customers.push(record);
-    //        }
-    //    }    
-    //    $scope.records = customers;
-    //};
+    $scope.range = function (size,start, end) {
+        var ret = [];        
+        console.log(size,start, end);
+    
+           if (size < end) {
+            end = size;
+            if(size<$scope.gap){
+                 start = 0;
+            }else{
+                 start = size-$scope.gap;
+            }
+    
+        }
+        for (var i = start; i < end; i++) {
+            ret.push(i);
+        }        
+         console.log(ret);        
+        return ret;
+    };
+    
 });
 
 var counterThisOne = 0,
